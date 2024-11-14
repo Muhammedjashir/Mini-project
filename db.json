@@ -1,0 +1,156 @@
+{
+  "user": [
+    {
+      "id": "0f68",
+      "name": "JashirT",
+      "email": "j@example.com",
+      "password": "Jashirt@123",
+      "cpassword": "Jashirt@123"
+    }
+  ],
+  "product": [
+    {
+      "id": "4",
+      "name": "Sean Green One Star Pro",
+      "price": 6499,
+      "img": "https://www.converse.in/media/catalog/product/a/0/a07307c_c.jpg?optimize=medium&bg-color=255%2C255%2C255&fit=cover&height=2000&width=1600&auto=webp&format=pjpg",
+      "cart": "",
+      "category": "men",
+      "type": "featured",
+      "brand": "Converse",
+      "stock": 100,
+      "rating": 4.6,
+      "qty": 1
+    },
+    {
+      "id": "5",
+      "name": "Run Star Trainer",
+      "price": 6499,
+      "img": "https://www.converse.in/media/catalog/product/a/1/a10450c_c_08x1.jpg?optimize=medium&bg-color=255%2C255%2C255&fit=cover&height=2000&width=1600&auto=webp&format=pjpg",
+      "cart": "",
+      "category": "men",
+      "type": "new",
+      "brand": "Converse",
+      "stock": 45,
+      "rating": 4.9,
+      "qty": 1
+    },
+    {
+      "id": "6",
+      "name": "Converse All Star BB Shift CX",
+      "price": 9499,
+      "img": "https://www.converse.in/media/catalog/product/a/1/a11994c_c_08x1.jpg?optimize=medium&bg-color=255%2C255%2C255&fit=cover&height=1200&width=960&auto=webp&format=pjpg",
+      "cart": "",
+      "category": "men",
+      "type": "featured",
+      "brand": "Converse",
+      "stock": 10,
+      "rating": 5,
+      "qty": 1
+    },
+    {
+      "id": "7",
+      "name": "Chunk Taylor All Star ",
+      "price": 4299,
+      "img": "https://www.converse.in/media/catalog/product/m/9/m9160c_02_1_1.jpg?optimize=medium&bg-color=255%2C255%2C255&fit=cover&height=1200&width=960&auto=webp&format=pjpg",
+      "cart": "",
+      "category": "men",
+      "type": "popular",
+      "brand": "Converse",
+      "stock": 20,
+      "rating": 4.7,
+      "qty": 1
+    },
+    {
+      "id": "8",
+      "name": "Chunk 70 Canvas",
+      "price": 5999,
+      "img": "https://www.converse.in/media/catalog/product/1/6/162050c_02.jpg?optimize=medium&bg-color=255%2C255%2C255&fit=cover&height=1200&width=960&auto=webp&format=pjpg",
+      "cart": "",
+      "category": "men",
+      "type": "best-seller",
+      "brand": "Converse",
+      "stock": 75,
+      "rating": 4.9,
+      "qty": 1
+    },
+    {
+      "id": "9",
+      "name": "Chunk Taylor All Star ",
+      "price": 4299,
+      "img": "https://www.converse.in/media/catalog/product/m/7/m7650c_02_1_1.jpg?optimize=medium&bg-color=255%2C255%2C255&fit=cover&height=2000&width=1600&auto=webp&format=pjpg",
+      "cart": "",
+      "category": "men",
+      "type": "featured",
+      "brand": "Converse",
+      "stock": 15,
+      "rating": 4.8,
+      "qty": 1
+    },
+    {
+      "id": "10",
+      "name": "Chunk 70",
+      "price": 5949,
+      "img": "https://www.converse.in/media/catalog/product/a/0/a08134c_c_08x1.jpg?optimize=medium&bg-color=255%2C255%2C255&fit=cover&height=1200&width=960&auto=webp&format=pjpg",
+      "cart": "",
+      "category": "men",
+      "type": "popular",
+      "brand": "Converse",
+      "stock": 40,
+      "rating": 4.9,
+      "qty": 1
+    },
+    {
+      "id": "11",
+      "name": "Chunk 70 Plus Canvas",
+      "price": 6999,
+      "img": "https://www.converse.in/media/catalog/product/a/0/a00916c_02.jpg?optimize=medium&bg-color=255%2C255%2C255&fit=cover&height=2000&width=1600&auto=webp&format=pjpg",
+      "cart": "",
+      "category": "men",
+      "type": "new",
+      "brand": "Converse",
+      "stock": 35,
+      "rating": 4.8,
+      "qty": 1
+    },
+    {
+      "id": "12",
+      "name": "Run Star Hike Canvase Platform",
+      "price": 6999,
+      "img": "https://www.converse.in/media/catalog/product/1/6/166800c_02.jpg?optimize=medium&bg-color=255%2C255%2C255&fit=cover&height=1200&width=960&auto=webp&format=pjpg",
+      "cart": "",
+      "category": "men",
+      "type": "featured",
+      "brand": "Converse",
+      "stock": 8,
+      "rating": 5,
+      "qty": 1
+    },
+    {
+      "id": "13",
+      "name": "Run Star Motion CX Platform Seasonal Color",
+      "price": 5999,
+      "img": "https://www.converse.in/media/catalog/product/1/7/171546c_02.jpg?optimize=medium&bg-color=255%2C255%2C255&fit=cover&height=1200&width=960&auto=webp&format=pjpg",
+      "cart": "",
+      "category": "men",
+      "type": "popular",
+      "brand": "Converse",
+      "stock": 12,
+      "rating": 4.8,
+      "qty": 1
+    },
+    {
+      "id": "14",
+      "name": "One Star Pro Suede",
+      "price": 4799,
+      "img": "https://www.converse.in/media/catalog/product/a/0/a06645c_c_08x1.jpg?optimize=medium&bg-color=255%2C255%2C255&fit=cover&height=1200&width=960&auto=webp&format=pjpg",
+      "cart": "",
+      "category": "men",
+      "type": "best-seller",
+      "brand": "Converse",
+      "stock": 50,
+      "rating": 4.6,
+      "qty": 1
+    }
+  ]
+}
