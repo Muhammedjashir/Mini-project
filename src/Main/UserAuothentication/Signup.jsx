@@ -1,8 +1,6 @@
-// src/Signup.js
 import React, { useState } from "react";
-import './singup.css'
-import axios from 'axios';
-import { Navigate, useNavigate } from "react-router-dom";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function Signup() {
   const [formdata, setFormdata] = useState({
@@ -26,20 +24,21 @@ function Signup() {
     });
   };
 
+  const navigate = useNavigate();
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    Navigate('/singin')
+    navigate("/signin");
     console.log(formdata);
     await axios.post("http://localhost:4100/user", formdata);
   };
-  const Navigate = useNavigate()
 
   return (
-    <div className="signup-container">
-      <h2>Signup</h2>
+    <div className="max-w-md mx-auto p-8 border border-gray-300 rounded-lg shadow-md">
+      <h2 className="text-2xl text-center mb-6">Signup</h2>
       <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label>Username</label>
+        <div className="mb-6">
+          <label className="block mb-2 font-semibold text-gray-700">Username</label>
           <input
             type="text"
             name="name"
@@ -49,14 +48,15 @@ function Signup() {
             onBlur={() => setFocus({ ...focus, errName: true })}
             onChange={handleChange}
             required
+            className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-green-500"
           />
-          <span className={focus.errName && !formdata.name.match(/^[A-Za-z0-9]{3,16}$/) ? "visible" : ""}>
+          <span className={`text-red-500 text-sm mt-1 ${focus.errName && !formdata.name.match(/^[A-Za-z0-9]{3,16}$/) ? "block" : "hidden"}`}>
             Username should be 3-16 characters
           </span>
         </div>
 
-        <div className="form-group">
-          <label>Email</label>
+        <div className="mb-6">
+          <label className="block mb-2 font-semibold text-gray-700">Email</label>
           <input
             type="email"
             name="email"
@@ -65,14 +65,15 @@ function Signup() {
             onBlur={() => setFocus({ ...focus, errEmail: true })}
             onChange={handleChange}
             required
+            className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-green-500"
           />
-          <span className={focus.errEmail && !formdata.email.match(/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/) ? "visible" : ""}>
+          <span className={`text-red-500 text-sm mt-1 ${focus.errEmail && !formdata.email.match(/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/) ? "block" : "hidden"}`}>
             Enter a valid email ID
           </span>
         </div>
 
-        <div className="form-group">
-          <label>Password</label>
+        <div className="mb-6">
+          <label className="block mb-2 font-semibold text-gray-700">Password</label>
           <input
             type="password"
             name="password"
@@ -82,14 +83,15 @@ function Signup() {
             onBlur={() => setFocus({ ...focus, errPass: true })}
             onChange={handleChange}
             required
+            className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-green-500"
           />
-          <span className={focus.errPass && !formdata.password.match(/(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,16}/) ? "visible" : ""}>
+          <span className={`text-red-500 text-sm mt-1 ${focus.errPass && !formdata.password.match(/(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,16}/) ? "block" : "hidden"}`}>
             Password must be 8-16 characters, include uppercase, digit, and special character
           </span>
         </div>
 
-        <div className="form-group">
-          <label>Confirm Password</label>
+        <div className="mb-6">
+          <label className="block mb-2 font-semibold text-gray-700">Confirm Password</label>
           <input
             type="password"
             name="cpassword"
@@ -99,13 +101,16 @@ function Signup() {
             onBlur={() => setFocus({ ...focus, errCpass: true })}
             onChange={handleChange}
             required
+            className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-green-500"
           />
-          <span className={focus.errCpass && formdata.cpassword !== formdata.password ? "visible" : ""}>
+          <span className={`text-red-500 text-sm mt-1 ${focus.errCpass && formdata.cpassword !== formdata.password ? "block" : "hidden"}`}>
             Passwords do not match
           </span>
         </div>
 
-        <button type="submit">Signup</button>
+        <button type="submit" className="w-full py-3 bg-green-500 text-white font-bold rounded hover:bg-white hover:text-black transition duration-300">
+          Signup
+        </button>
       </form>
     </div>
   );

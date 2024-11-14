@@ -1,8 +1,9 @@
 import React from "react"
-import Main from "./Main/Main"
+
 import Signup from "./Main/UserAuothentication/Signup"
 import Singin from "./Main/UserAuothentication/Signin"
 import { Route,Routes } from "react-router-dom"
+import Header from "./Main/Header"
 
 function App() {
   
@@ -11,9 +12,9 @@ function App() {
     
       <div>
        <Routes>
-          <Route path="/"element={<Main/>}/>
-          <Route path="singup" element={<Signup/>}/>
-          <Route path='singin'element={<Singin/>}/>
+          <Route path="/"element={<Header/>}/>
+          <Route path="signup" element={<Signup/>}/>
+          <Route path='signin'element={<Singin/>}/>
         </Routes>
       </div>
      

@@ -1,14 +1,17 @@
 import React from "react";
 import Home from "./UserAuothentication/Pages/Home";
+import Bar from './UserAuothentication/NavbarComponent/Bar'
 
 
 
 
-function Main() {
+
+
+function Header() {
   return (
     <>
       <div>
-        
+        <Bar/>
         <div>
           <Home/>
         </div>
@@ -17,4 +20,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Header;
