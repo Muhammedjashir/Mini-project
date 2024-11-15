@@ -23,6 +23,11 @@ function Signup() {
       [e.target.name]: e.target.value,
     });
   };
+  const NewUser={
+      ...formdata,
+      cart:[],
+      order:[]
+  }
 
   const navigate = useNavigate();
 
@@ -30,7 +35,7 @@ function Signup() {
     e.preventDefault();
     navigate("/signin");
     console.log(formdata);
-    await axios.post("http://localhost:4100/user", formdata);
+    await axios.post("http://localhost:4100/user", NewUser);
   };
 
   return (

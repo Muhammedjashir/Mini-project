@@ -8,7 +8,7 @@ import {
 } from "@material-tailwind/react";
 import {  useNavigate } from "react-router-dom";
 
-const Bar = () => {
+const Bar1 = () => {
   const Navigate = useNavigate();
   const [openNav, setOpenNav] = React.useState(false);
 
@@ -50,20 +50,19 @@ const Bar = () => {
 
   return (
     <div
-      className="relative h-screen w-full bg-cover bg-center"
-      style={{
-        backgroundImage:
-          "url('https://www.converse.in/media/wysiwyg/oct_30_homepage-03.png?auto=webp&format=png&quality=85')",
-      }}
+      
     >
       <Navbar className="fixed top-0 z-10 h-max max-w-full rounded-md bg-opacity-50 px-4 py-2 lg:px-8 lg:py-4 backdrop-blur-md">
         <div className="flex items-center justify-between text-blue-gray-900">
           <Typography
             as="a"
             href="#"
-            className="text-lg font-semibold text-gray-800"
+            className="text-lg font-semibold text-gray-700 hover:text-black"
           >
+            <button onClick={()=>Navigate('/')}>
             All Star
+            </button>
+           
           </Typography>
           <div className="hidden lg:flex items-center gap-6">
             {navList}
@@ -149,20 +148,11 @@ const Bar = () => {
       </Navbar>
       <div className="flex items-center justify-center h-full">
         <div className="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg text-center">
-          <Typography
-            variant="h3"
-            color="gray-900"
-            className="mb-4 font-semibold"
-          >
-            Welcome to All Star
-          </Typography>
-          <p className="text-gray-700">
-            Discover our exclusive collection of footwear and more.
-          </p>
+         
         </div>
       </div>
     </div>
   );
 };
 
-export default Bar;
+export default Bar1;
