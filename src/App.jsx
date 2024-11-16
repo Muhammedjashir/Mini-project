@@ -1,12 +1,11 @@
 import React from "react"
-
-import Signup from "./UserAuothentication/Signup"
-import Singin from "./UserAuothentication/Signin"
 import { Route,Routes } from "react-router-dom"
 import Header from "./Main/Header"
-import Produts from "../Pages/Produts"
-import Cart from "../Pages/Cart"
-import Detail from "../Pages/Detail"
+import Signup from "./UserAuothentication/Signup"
+import Signin from "./UserAuothentication/Signin"
+import Produts from "./Pages/Produts"
+import Cart from './Pages/Cart'
+import Detail from './Pages/Detail'
 
 function App() {
   
@@ -17,7 +16,7 @@ function App() {
        <Routes>
           <Route path="/"element={<Header/>}/>
           <Route path="signup" element={<Signup/>}/>
-          <Route path='signin'element={<Singin/>}/>
+          <Route path='signin'element={<Signin/>}/>
           <Route path="products"element={<Produts/>}/>
           <Route path="cart" element = {<Cart/>}/>
           <Route path='detail/:id'element = {<Detail/>}/>
