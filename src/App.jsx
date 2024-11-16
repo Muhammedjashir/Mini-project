@@ -1,12 +1,12 @@
 import React from "react"
 
-import Signup from "./Main/UserAuothentication/Signup"
-import Singin from "./Main/UserAuothentication/Signin"
+import Signup from "./UserAuothentication/Signup"
+import Singin from "./UserAuothentication/Signin"
 import { Route,Routes } from "react-router-dom"
 import Header from "./Main/Header"
-import Produts from "./Main/UserAuothentication/Pages/Produts"
-import Cart from "./Main/UserAuothentication/Pages/Cart"
-import Detail from "./Main/UserAuothentication/Pages/Detail"
+import Produts from "../Pages/Produts"
+import Cart from "../Pages/Cart"
+import Detail from "../Pages/Detail"
 
 function App() {
   

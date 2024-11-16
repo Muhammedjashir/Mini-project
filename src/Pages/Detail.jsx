@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Navigate, useParams } from "react-router-dom";
 import Bar1 from "../NavbarComponent/Bar1";
 
+
 function Detail() {
   const [detail, setDetail] = useState([]);
   const {id} = useParams();
@@ -10,7 +11,6 @@ function Detail() {
   const productData = async () => {
     const Response = await axios.get(`http://localhost:4100/product`);
     const DetailPage = Response.data.filter((item) => item.id==id);
-    console.log(DetailPage,'gdhsgsdjhgdsj');
     setDetail(DetailPage);
   };
   useEffect(() => {
@@ -26,7 +26,7 @@ function Detail() {
         alert('product already exist')
        }else{
         const updateCart=[...userCart,data]
-        const res=await axios.patch(`http://localhost:4100/user/${Ids}`,{cart:updateCart})
+        await axios.patch(`http://localhost:4100/user/${Ids}`,{cart:updateCart})
          alert('Added to Cart')
        }
     }else{

@@ -1,25 +1,12 @@
 {
   "user": [
     {
-      "id": "8ae6",
-      "name": "Jashirt",
-      "email": "Jashirt@example.com",
-      "password": "Jashirt@313",
-      "cpassword": "Jashirt@313",
+      "id": "0db6",
+      "name": "JashirT",
+      "email": "j@examle.com",
+      "password": "Jashirt@123",
+      "cpassword": "Jashirt@123",
       "cart": [
-        {
-          "id": "6",
-          "name": "Converse All Star BB Shift CX",
-          "price": 9499,
-          "img": "https://www.converse.in/media/catalog/product/a/1/a11994c_c_08x1.jpg?optimize=medium&bg-color=255%2C255%2C255&fit=cover&height=1200&width=960&auto=webp&format=pjpg",
-          "cart": "",
-          "category": "men",
-          "type": "featured",
-          "brand": "Converse",
-          "stock": 10,
-          "rating": 5,
-          "qty": 1
-        },
         {
           "id": "7",
           "name": "Chunk Taylor All Star ",
@@ -31,6 +18,32 @@
           "brand": "Converse",
           "stock": 20,
           "rating": 4.7,
+          "qty": 1
+        },
+        {
+          "id": "14",
+          "name": "One Star Pro Suede",
+          "price": 4799,
+          "img": "https://www.converse.in/media/catalog/product/a/0/a06645c_c_08x1.jpg?optimize=medium&bg-color=255%2C255%2C255&fit=cover&height=1200&width=960&auto=webp&format=pjpg",
+          "cart": "",
+          "category": "men",
+          "type": "best-seller",
+          "brand": "Converse",
+          "stock": 50,
+          "rating": 4.6,
+          "qty": 1
+        },
+        {
+          "id": "9",
+          "name": "Chunk Taylor All Star ",
+          "price": 4299,
+          "img": "https://www.converse.in/media/catalog/product/m/7/m7650c_02_1_1.jpg?optimize=medium&bg-color=255%2C255%2C255&fit=cover&height=2000&width=1600&auto=webp&format=pjpg",
+          "cart": "",
+          "category": "men",
+          "type": "featured",
+          "brand": "Converse",
+          "stock": 15,
+          "rating": 4.8,
           "qty": 1
         }
       ],

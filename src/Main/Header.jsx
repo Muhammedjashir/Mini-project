@@ -1,6 +1,6 @@
 import React from "react";
-import Home from "./UserAuothentication/Pages/Home";
-import Bar from './UserAuothentication/NavbarComponent/Bar'
+import Home from "../../Pages/Home";
+import Bar from '../../NavbarComponent/Bar'
 
 
 

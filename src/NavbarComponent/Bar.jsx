@@ -7,7 +7,6 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import {  useNavigate } from "react-router-dom";
-
 const Bar = () => {
   const Navigate = useNavigate();
   const [openNav, setOpenNav] = React.useState(false);
