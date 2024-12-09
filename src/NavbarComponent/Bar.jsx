@@ -11,7 +11,7 @@ const Bar = () => {
   const Navigate = useNavigate();
   const [openNav, setOpenNav] = React.useState(false);
 
-  React.useEffect(() => {
+  React.useEffect(() =>  {
     window.addEventListener(
       "resize",
       () => window.innerWidth >= 960 && setOpenNav(false)
